@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para Palestras</title>
+    <link href="css/estilo.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="topnav">
+        <a><img src="images/fatecitu.png" width="250px" href="https://fatecitu.edu.br/portal/" target="_blank"></a>
+        <div class="topnav-right">
+          <a class="ativo" href="#busca">Início</a>
+          <a href="#sobre">Contato</a>
+          <a href="#sobre">Sobre</a>
+        </div>
+    </nav> 
+
+    <div class="container">
+       
+        <div class="coluna">
+          <h1 class="titulo">Formulário</h1>
+          <h1>Cadastro de palestra</h1>
+            <p>Utilize o formulário para se cadastrar nas palestras sobre os cursos da Fatec</p>
+            
+                <form action="form" method="post" action="/">
+
+                        <label>Nome</label>
+                        <input type="text" id="NOME" name="NOME" placeholder="Digite o seu nome" title="Informe o seu nome completo"><br>
+                        <label>É aluno FATEC?</label>
+                        <input type="checkbox" id="ALUNO_FATEC" name="ALUNO_FATEC">Sim<br>
+                        <label>Data de Nascimento</label>
+                        <input type="date" id="DATA" name="DATA"><br>
+                        <label>Qual palestra deseja participar?</label>
+                        <input type="radio" id="CURSO" name="CURSO" value="GTI">GTI
+
+                        <input type="radio" id="CURSO" name="CURSO" value="ADS">ADS
+
+                        <input type="radio" id="CURSO" name="CURSO" value="EVENTOS">EVENTOS<br>
+
+                        <label>Virá acompanhado?</label>
+                        <input type="checkbox" id="ALUNO_FATEC" name="ALUNO_FATEC">Sim<br>
+
+                        <label>Quantas pessoas?</label>
+                        <input type="number" id="QUANTIDADE_PESSOAS" min="0" max="5" placeholder="0" size="30"><br><br>
+
+                        <input type="submit" value="Salvat ✅" class="botão_apagar">
+                        <input type="reset" value="Limpar ♻️" class="botão">
+                </form>
+        </div>
+        
+        <div class="coluna cinza">
+            <h1 class="titulo">Relação de inscritos na palestra</h1>
+            <table border="1"> 
+              <head>  
+                  <tr>
+                      <th colspan="1">#</th> 
+                      <th colspan="1">Nome</th>
+                      <th colspan="1">Aluno Fatec</th> 
+                      <th colspan="1">Data de Nascimento</th>
+                      <th colspan="1">Palestra</th>
+                      <th colspan="1">Acompanhado?</th>
+                      <th colspan="1">Quantidade</th>
+                      <th colspan="1">Opções</th> 
+                  </tr> 
+              </head> 
+              <tr> 
+                  <td>1</td>
+                  <td>João da Silva</td>
+                  <td>Sim</td>
+                  <td>04/08/2002</td>
+                  <td>GTI</td>
+                  <td>Sim</td>
+                  <td>2</td>
+                  <td>
+                      <input type="submit" value="Editar  ✍🏻" class="botão">
+                      <input type="reset" value="Apagar ❌" class="botão_apagar">    
+                  </td> 
+              </tr> 
+              <tr> 
+                  <td>2</td>
+                  <td>Maria José</td>
+                  <td>Não</td>
+                  <td>28/04/2000</td>
+                  <td>Eventos</td>
+                  <td>Não</td>
+                  <td>0</td>
+                  <td>
+                      <input type="submit" value="Editar ✍🏻" class="botão">
+                      <input type="reset" value="Apagar ❌" class="botão_apagar">    
+                  </td> 
+              </tr>
+              <tr> 
+                  <td>3</td>
+                  <td>Leo Fernandez</td>
+                  <td>Não</td>
+                  <td>08/02/1983</td>
+                  <td>ADS</td>
+                  <td>Sim</td>
+                  <td>1</td>
+                  <td>
+                      <input type="submit" value="Editar ✍🏻" class="botão">
+                      <input type="reset" value="Apagar ❌" class="botão_apagar">    
+                  </td> 
+              </tr>
+              <tr> 
+                  <td>4</td>
+                  <td>Stefany Lima</td>
+                  <td>Sim</td>
+                  <td>18/09/2001</td>
+                  <td>GTI</td>
+                  <td>Não</td>
+                  <td>0</td>
+                  <td>
+                      <input type="submit" value="Editar ✍🏻" class="botão">
+                      <input type="reset" value="Apagar ❌" class="botão_apagar">    
+                  </td> 
+              </tr> 
+              <tr> 
+                  <td>5</td>
+                  <td>Artur Aguilar</td>
+                  <td>Sim</td>
+                  <td>23/03/1999</td>
+                  <td>ADS</td>
+                  <td>Sim</td>
+                  <td>5</td>
+                  <td>
+                      <input type="submit" value="Editar ✍🏻" class="botão">
+                      <input type="reset" value="Apagar ❌" class="botão_apagar">    
+                  </td> 
+              </tr>
+              <tr> 
+                  <td>6</td>
+                  <td>Silvia dos Santos</td>
+                  <td>Não</td>
+                  <td>06/08/1984</td>
+                  <td>Eventos</td>
+                  <td>Sim</td>
+                  <td>1</td>
+                  <td>
+                      <input type="submit" value="Editar ✍🏻" class="botão">
+                      <input type="reset" value="Apagar ❌" class="botão_apagar">    
+                  </td> 
+              </tr> 
+          </table>
+        </div>
+        
+      </div>
+
+      <footer>
+          <p>Todos os direitos reservados - Fatec Itu &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
+      </footer>
+</body>
+</html>
